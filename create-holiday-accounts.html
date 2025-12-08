@@ -7,6 +7,20 @@
       background: #ffffff;
       color: #222;
     }
+    table.holiday-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 800px;
+    }
+    table.holiday-table th,
+    table.holiday-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    table.holiday-table thead tr {
+      background-color: #f5f5f5;
+    }
   </style>
 </head>
 <body>
@@ -14,21 +28,25 @@
     <li>Go to <b>System → Accounts → Accounts</b></li>
     <li>Click the plus to create a new <b>Account</b></li>
     <li>Use the settings defined below</li>
-    <table>
-      <tr><b>
-        <td>Id</td>
-        <td>Description</td>
-        <td>Account type</td>
-        <td>Account unit</td>
-        <td>Reset</td>
-      </b></tr>
-      <tr>
-        <td>X300</td>
-        <td>Holiday balance</td>
-        <td>Employee account</td>
-        <td>Days</td>
-        <td>None</td>
-      </tr>
+    <table class="holiday-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Description</th>
+          <th>Account type</th>
+          <th>Account unit</th>
+          <th>Reset</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>X300</td>
+          <td>Holiday balance</td>
+          <td>Employee account</td>
+          <td>Days</td>
+          <td>None</td>
+        </tr>
+      </tbody>
     </table>
   </ol>
 </body>
