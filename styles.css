@@ -6,6 +6,7 @@ body {
       color: #222;
 }
 
+/* Table stuff */
 table.holiday-table {
   border-collapse: collapse;
   width: 100%;
@@ -19,5 +20,10 @@ table.holiday-table td {
 }
 table.holiday-table thead tr {
   background-color: #f5f5f5;
+}
+
+/* List stuff */
+li {
+  margin-bottom: 6pt;
 }
 
