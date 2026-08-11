@@ -1,0 +1,70 @@
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <ol>
+    <li>Go to <b>System → Employee figures</b></li>
+    <li>Check the list if the figure with Id <b>:WRKWKDAYS</b> already exists, otherwise</li>
+    <ol>
+    <li>Click the plus to create a new <b>Employee figure</b> with these settings:</li>
+    <br>
+    <table>
+        <tr>
+          <td><b>Type</b></td>
+          <td>Calculation figure</td>
+        </tr>
+        <tr>
+          <td><b>Calculation figure</b></td>
+          <td>WRKWKDAYS</td>
+        </tr>
+        <tr>
+          <td><b>Definition level</b></td>
+          <td>System</td>
+        </tr>
+    </table>
+    </ol>
+    <li>Go to <b>System → System Set-up</b> and click the <b>Rates</b> menu in the top right</li>
+    <li>Click the blue plus to create a new rate with these settings:</li>
+    <br>
+    <table>
+        <tr>
+          <td><b>Rate id</b></td>
+          <td>#WRKWKDAYS</td>
+        </tr>
+        <tr>
+          <td><b>Rate</b></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td><b>From</b></td>
+          <td>01/01/2025</td>
+        </tr>
+        <tr>
+          <td><b>To</b></td>
+          <td></td>
+        </tr>
+    </table>
+    <li>Go to <b>Reasons → Absence reasons</b></li>
+    <li>Click the blue plus to create a new absence reason with these settings:</li>
+    <br>
+    <table>
+        <tr>
+          <td><b>Code</b></td>
+          <td>Holiday-relative</td>
+        </tr>
+        <tr>
+          <td><b>Description</b></td>
+          <td>Holiday</td>
+        </tr>
+        <tr>
+          <td><b>Short description</b></td>
+          <td>Holiday</td>
+        </tr>
+        <tr>
+          <td><b>Time type</b></td>
+          <td>Vacation day</td>
+        </tr>
+    </table>
+    <li>Add a General category specific setup with the holiday absence account specified as the <b>Account</b></li>
+  </ol>
+</body>
