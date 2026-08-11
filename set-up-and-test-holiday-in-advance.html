@@ -1,1 +1,67 @@
-
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <ol>
+    <li>First, check that the holiday account has the correct advanced settings. Go to <b>System → Accounts → Accounts</b></li>
+    <li>Select the main holiday account, normally X300, and go to the <b>Advanced</b> settings tab</li>
+    <li>Scroll down to the section on <b>Minimum balance</b>, and see that it is set to 0</li>
+    <li>At the bottom, the setting <b>Running check</b> should be checked</li>
+    <li>Go to the Web portal and navigate to the web part Calendar</li>
+    <li>Select an employee, and attempt to register 6 weeks of holiday. You should get an error.</li>
+    <br>
+    <li>Next, we need to create and set a value for an employee figure. Go to <b>System → Employee Figures</b></li>
+    <li>Click the blue plus to create a new employee figure with these settings:</li>
+    <br>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Type</b></td>
+        <td>Regular figure</td>
+      </tr>
+      <tr>
+        <td><b>Id</b></td>
+        <td>ADVHOLIDAY</td>
+      </tr>
+      <tr>
+        <td><b>Description</b></td>
+        <td>Holiday in advance</td>
+      </tr>
+      <tr>
+        <td><b>Definition level</b></td>
+        <td>Employee, Category, and System</td>
+      </tr>
+      <tr>
+        <td><b>Available to account formulas</b></td>
+        <td>&#x2713</td>
+      </tr>
+    </table>
+    <br>
+    <li>Go to <b>System → Employee</b></li>
+    <li>Select the employee that you wish to grant holiday in advance</li>
+    <li>Click <b>Rates</b></li>
+    <li>Click the blue plus to add a new rate with these settings:</li>
+    <br>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Rate id</b></td>
+        <td>ADVHOLIDAY</td>
+      </tr>
+      <tr>
+        <td><b>Rate</b></td>
+        <td>-25</td>
+      </tr>
+      <tr>
+        <td><b>From</b></td>
+        <td>01/01/2025</td>
+      </tr>
+      <tr>
+        <td><b>To</b></td>
+        <td></td>
+      </tr>
+    </table>
+    <br>
+    <li>Save it, and test again in the web portal, by repeating step 5-6</li>
+  </ol>
+  <p>Note: The From and To dates should in a real life scenario be set so the exception is only valid until the employee has accrued enough holiday to not need the holiday in advance. </p>
+  <p>Example: Employee has accrued 4.16 days of holiday in October. They wish to register 1 week of holiday, requiring 5 days. The ADVHOLIDAY value is set to -1 from Oct 1 until Nov 1, where they accrue another 2.08 that can cover the "loan".</p>
+</body>
