@@ -3,17 +3,71 @@
 </head>
 <body>
   <ol>
+    <li>First, we need to create the accounts required for the new holiday type</li>
+    <li>Go to <b>System → Accounts → Accounts</b></li>
+    <li>Click the blue plus to create new accounts according to the table below</li>
+    <br>
+    <table class="holiday-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Description</th>
+          <th>Account type</th>
+          <th>Account unit</th>
+          <th>Reset</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A320</td>
+          <td>Seniority holiday</td>
+          <td>Employee account</td>
+          <td>Days</td>
+          <td>Periodically</td>
+        </tr>
+        <tr>
+          <td>X320</td>
+          <td>Seniority holiday balance</td>
+          <td>Employee account</td>
+          <td>Days</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>Z321</td>
+          <td>Seniority holidays not used</td>
+          <td>Employee account</td>
+          <td>Days</td>
+          <td>Periodically</td>
+        </tr>
+        <tr>
+          <td>Z322</td>
+          <td>Seniority holidays above maximum</td>
+          <td>Employee account</td>
+          <td>Days</td>
+          <td>Periodically</td>
+        </tr>
+        <tr>
+          <td>Z323</td>
+          <td>Seniority holidays encashment account</td>
+          <td>Employee account</td>
+          <td>Days</td>
+          <td>Periodically</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
     <li>Go to <b>Profiles → Holiday Management → Holiday Types</b></li>
     <li>Click the blue plus to add a new Holiday type</li>
     <li>Fill the basic settings according to the table below</li>
+    <br>
     <table class="holiday-table">
       <tr>
         <td><b>Id</b></td>
-        <td>DANISH-HOLIDAY-ACT-2020</td>
+        <td>EXTRA-HOLIDAYS-AGE</td>
       </tr>
       <tr>
         <td><b>Description</b></td>
-        <td>Holiday</td>
+        <td>Seniority days</td>
       </tr>
       <tr>
         <td><b>Accruing value</b></td>
@@ -21,48 +75,81 @@
       </tr>
       <tr>
         <td><b>Holiday period from</b></td>
-        <td>September</td>
+        <td>Month after birth</td>
       </tr>
       <tr>
         <td><b>Accruing period, one year from</b></td>
-        <td>September</td>
+        <td>January</td>
       </tr>
       <tr>
         <td><b>Allocate accrued holidays at</b></td>
-        <td>End of the month</td>
+        <td>Beginning of the period</td>
       </tr>
       <tr>
         <td><b>Length</b></td>
-        <td>16 months</td>
+        <td>12 months</td>
       </tr>
     </table>
+    <br>
     <li>Click the <b>Advanded</b> tab in the top, and fill the settings according to the table below</li>
     <table class="holiday-table">
       <tr>
-        <td><b>Rounding method*</b></td>
-        <td>Round to nearest</td>
+        <td><b>Rounding method</b></td>
+        <td>None</td>
       </tr>
       <tr>
-        <td><b>To*</b></td>
-        <td>Days with two decimals</td>
-      </tr>
-      <tr>
-        <td><b>Make link postings</b></td>
-        <td>&#9745;</td>  
-      </tr>
-      <tr>
-        <td><b>Transfer with link postings</b></td>
-        <td>&#9745;</td>        
-      </tr>
-      <tr>
-        <td><b>Show negative remaining holidays</b></td>
-        <td>&#9745;</td>  
-      </tr>
-      <tr>
-        <td><b>Display like value/total in holiday overview</b></td>
-        <td>&#9745;</td>  
+        <td><b>Account Posting</b></td>
+        <td>Adjust account by given value</td>  
       </tr>
     </table>
+    <br>
     <li>Click the save icon</li>
+    <li>Click <b>Category</b></li>
+    <li>Create a new category setup by clicking the blue plus</li>
+    <br>
+    <li>Fill the General settings according to the table below</li>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Category</b></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Valid from</b></td>
+        <td><i>Choose the current year</i></td>
+      </tr>
+      <tr>
+        <td><b>Accruing value</b></td>
+        <td>Fixed value</td>
+      </tr>
+      <tr>
+        <td><b>Holiday period from</b></td>
+        <td>Month after birth</td>
+      </tr>
+      <tr>
+        <td><b>Accruing period, one year from</b></td>
+        <td>January</td>
+      </tr>
+      <tr>
+        <td><b>Allocate accrued holidays at</b></td>
+        <td>Beginning of the period</td>
+      </tr>
+      <tr>
+        <td><b>Length</b></td>
+        <td>12 months</td>
+      </tr>
+    </table>
+    <br>
+    <li>Click the <b>Advanded</b> tab in the top, and fill the settings according to the table below</li>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Rounding method</b></td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><b>Account Posting</b></td>
+        <td>Adjust account by given value</td>  
+      </tr>
+    </table>
+    <br>
   </ol>
 </body>
