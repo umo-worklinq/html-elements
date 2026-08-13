@@ -56,7 +56,7 @@
       </tbody>
     </table>
     <br>
-    <li>Go to <b>Profiles → Holiday Management → Holiday Types</b></li>
+    <li>Next, go to <b>Profiles → Holiday Management → Holiday Types</b></li>
     <li>Click the blue plus to add a new Holiday type</li>
     <li>Fill the basic settings according to the table below</li>
     <br>
@@ -91,23 +91,12 @@
       </tr>
     </table>
     <br>
-    <li>Click the <b>Advanded</b> tab in the top, and fill the settings according to the table below</li>
-    <table class="holiday-table">
-      <tr>
-        <td><b>Rounding method</b></td>
-        <td>None</td>
-      </tr>
-      <tr>
-        <td><b>Account Posting</b></td>
-        <td>Adjust account by given value</td>  
-      </tr>
-    </table>
-    <br>
     <li>Click the save icon</li>
     <li>Click <b>Category</b></li>
     <li>Create a new category setup by clicking the blue plus</li>
     <br>
     <li>Fill the General settings according to the table below</li>
+    <br>
     <table class="holiday-table">
       <tr>
         <td><b>Category</b></td>
@@ -118,38 +107,46 @@
         <td><i>Choose the current year</i></td>
       </tr>
       <tr>
-        <td><b>Accruing value</b></td>
-        <td>Fixed value</td>
-      </tr>
-      <tr>
-        <td><b>Holiday period from</b></td>
-        <td>Month after birth</td>
-      </tr>
-      <tr>
-        <td><b>Accruing period, one year from</b></td>
-        <td>January</td>
-      </tr>
-      <tr>
-        <td><b>Allocate accrued holidays at</b></td>
-        <td>Beginning of the period</td>
-      </tr>
-      <tr>
-        <td><b>Length</b></td>
-        <td>12 months</td>
+        <td><b>Main Account</b></td>
+        <td>X320</td>
       </tr>
     </table>
     <br>
-    <li>Click the <b>Advanded</b> tab in the top, and fill the settings according to the table below</li>
+    <li>At the bottom of the page, click <b>+ Add</b> and fill the settings according to the table below</li>
+    <br>
     <table class="holiday-table">
       <tr>
-        <td><b>Rounding method</b></td>
-        <td>None</td>
+        <td><b>Year</b></td>
+        <td>60</td>
       </tr>
       <tr>
-        <td><b>Account Posting</b></td>
-        <td>Adjust account by given value</td>  
+        <td><b>Number of days/hours</b></td>
+        <td>2</td>
       </tr>
     </table>
     <br>
+    <li>Click the <b>Transfer/payout</b> tab in the top, and fill the settings according to the table below</li>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Total maximum days to transfer</b></td>
+        <td>5.00</td>
+      </tr>
+      <tr>
+        <td><b>Transfer remainder to account</b></td>
+        <td>Z320 - Seniority holidays not used</td>  
+      </tr>
+      <tr>
+        <td><b>Transfer remainder above maximum to</b></td>
+        <td>Z320 - Seniority holidays not used</td>  
+      </tr>
+    </table>
+    <br>
+    <li>At the bottom <b>+ Add</b> the options you wish to be able to select as an administrator when transferring holidays.</li>
+    <li>Click save</li>
+    <li>Go to <b>System → Employee</b> and select an employee that should be more than 60 years old</li>
+    <li>In the <b>Personal</b> tab of their settings, fill the Birth date with a date that is more than 60 years ago</li>
+    <li>Go to <b>System → Job Scheduler</b></li>
+    <li>If you don't already have a holiday calculation job for the current year, create one, otherwise, run it.</li>
+    <li>Go to the web portal, find the Holiday Overview web part, and check that the employee you selected has received the appropriate amount of holidays.</li>
   </ol>
 </body>
