@@ -1,0 +1,69 @@
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <ol>
+    <li>Gå til <b>System → Medarbejderværdier</b></li>
+    <li>Tjek om værdien med Id <b>:WRKWKDAYS</b> allerede findes, ellers</li>
+    <ol>
+    <li>Klik på plusset for at oprette et nyt <b>Medarbejdertal</b> med disse indstillinger:</li>
+    <br>
+    <table class="holiday-table">
+        <tr>
+          <td><b>Type</b></td>
+          <td>Beregningsværdi</td>
+        </tr>
+        <tr>
+          <td><b>Beregningsværdi</b></td>
+          <td>WRKWKDAYS</td>
+        </tr>
+        <tr>
+          <td><b>Definitionsniveau</b></td>
+          <td>System</td>
+        </tr>
+    </table>
+    <br>
+    </ol>
+    <li>Gå til <b>System → Systemopsætning</b> og klik på menuen <b>Satser</b> i øverste højre hjørne</li>
+    <li>Klik på det blå plus for at oprette en ny sats med disse indstillinger:</li>
+    <br>
+    <table class="holiday-table">
+        <tr>
+          <td><b>Sats-id</b></td>
+          <td>#WRKWKDAYS</td>
+        </tr>
+        <tr>
+          <td><b>Sats</b></td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td><b>Fra</b></td>
+          <td>01/01/2025</td>
+        </tr>
+        <tr>
+          <td><b>Til</b></td>
+          <td></td>
+        </tr>
+    </table>
+    <br>
+    <li>Gå til <b>Årsager → Fraværsårsager</b></li>
+    <li>Klik på det blå plus for at oprette en ny fraværsårsag med disse indstillinger:</li>
+    <br>
+    <table class="holiday-table">
+        <tr>
+          <td><b>Kode</b></td>
+          <td>Ferie-relativ</td>
+        </tr>
+        <tr>
+          <td><b>Beskrivelse</b></td>
+          <td>Ferie</td>
+        </tr>
+        <tr>
+          <td><b>Tidstype</b></td>
+          <td>Feriedag</td>
+        </tr>
+    </table>
+    <br>
+    <li>Tilføj en generel kategorispecifik opsætning med feriefraværskontoen angivet som <b>Konto</b></li>
+  </ol>
+</body>
