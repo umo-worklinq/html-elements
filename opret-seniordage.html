@@ -1,0 +1,148 @@
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <ol>
+    <li>Først skal vi oprette de konti, der kræves til den nye ferietype</li>
+    <li>Gå til <b>System → Konti → Konti</b></li>
+    <li>Klik på det blå plus for at oprette nye konti i henhold til tabellen nedenfor</li>
+    <table class="holiday-table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Beskrivelse</th>
+          <th>Kontotype</th>
+          <th>Kontoenhed</th>
+          <th>Nulstil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>F0320</td>
+          <td>Seniordage</td>
+          <td>Medarbejderkonto</td>
+          <td>Dage</td>
+          <td>Periodevis</td>
+        </tr>
+        <tr>
+          <td>S0320</td>
+          <td>Seniordagesaldo</td>
+          <td>Medarbejderkonto</td>
+          <td>Dage</td>
+          <td>Ingen</td>
+        </tr>
+        <tr>
+          <td>Z0321</td>
+          <td>Ikke-anvendte seniordage</td>
+          <td>Medarbejderkonto</td>
+          <td>Dage</td>
+          <td>Periodevis</td>
+        </tr>
+        <tr>
+          <td>Z0322</td>
+          <td>Seniordage rest over maksimum</td>
+          <td>Medarbejderkonto</td>
+          <td>Dage</td>
+          <td>Periodevis</td>
+        </tr>
+        <tr>
+          <td>Z0323</td>
+          <td>Udbetalingskonto for seniordage</td>
+          <td>Medarbejderkonto</td>
+          <td>Dage</td>
+          <td>Periodevis</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <li>Derefter skal du gå til <b>Profiler → Feriehåndtering → Ferietyper</b></li>
+    <li>Klik på det blå plus for at tilføje en ny ferietype</li>
+    <li>Udfyld de grundlæggende indstillinger i henhold til tabellen nedenfor</li>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Id</b></td>
+        <td>SENIORDAGE</td>
+      </tr>
+      <tr>
+        <td><b>Beskrivelse</b></td>
+        <td>Seniordage</td>
+      </tr>
+      <tr>
+        <td><b>Optjening</b></td>
+        <td>Efter alder</td>
+      </tr>
+      <tr>
+        <td><b>Ferieperiode fra</b></td>
+        <td>Måned efter fødseldato</td>
+      </tr>
+      <tr>
+        <td><b>Optjeningsperiode, ét år fra</b></td>
+        <td>Januar</td>
+      </tr>
+      <tr>
+        <td><b>Tildel optjente feriedage ved</b></td>
+        <td>Starten af perioden</td>
+      </tr>
+      <tr>
+        <td><b>Længde</b></td>
+        <td>12 måneder</td>
+      </tr>
+    </table>
+    <br>
+    <li>Klik på gem-ikonet</li>
+    <li>Klik på <b>Kategori</b></li>
+    <li>Opret en ny kategoriopsætning ved at klikke på det blå plus</li>
+    <br>
+    <li>Udfyld de generelle indstillinger i henhold til tabellen nedenfor</li>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Kategori</b></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><b>Gyldig fra</b></td>
+        <td><i>Vælg det nuværende år</i></td>
+      </tr>
+      <tr>
+        <td><b>Hovedkonto</b></td>
+        <td>S0320</td>
+      </tr>
+    </table>
+    <br>
+    <li>Nederst på siden klikker du på <b>+ Tilføj</b> og udfylder indstillingerne i henhold til tabellen nedenfor</li>
+    <table class="holiday-table">
+      <tr>
+        <td><b>År</b></td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td><b>Antal dage/timer</b></td>
+        <td>2</td>
+      </tr>
+    </table>
+    <br>
+    <li>Klik på fanen <b>Overførsel/udbetaling</b> øverst, og udfyld indstillingerne i henhold til tabellen nedenfor</li>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Samlet maksimalt antal dage til overførsel</b></td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td><b>Overfør restbeløb til konto</b></td>
+        <td>Z0321 - Ikke-anvendte seniordage</td>  
+      </tr>
+      <tr>
+        <td><b>Overfør restbeløb over maksimum til</b></td>
+        <td>Z0322 - Seniordage rest over maksimum</td>  
+      </tr>
+    </table>
+    <br>
+    <li>Nederst klikker du på <b>+ Tilføj</b> ved de indstillinger, du ønsker skal kunne vælges som administrator ved overførsel af ferie.</li>
+    <li>Klik på gem</li>
+    <li>Gå til <b>System → Medarbejder</b>, og vælg en medarbejder, der bør være over 60 år gammel</li>
+    <li>Under fanen <b>Personligt</b> i vedkommendes indstillinger udfylder du fødselsdatoen med en dato, der er mere end 60 år tilbage i tiden</li>
+    <li>Gå til <b>System → Jobafvikler</b></li>
+    <li>Hvis du ikke allerede har et ferieberegningsjob for det indeværende år, skal du oprette et; ellers skal du køre det.</li>
+    <li>Gå til webportalen, find webparten Ferieoversigt, og tjek, at den medarbejder, du valgte, har fået tildelt det korrekte antal seniordage.</li>
+  </ol>
+</body>
