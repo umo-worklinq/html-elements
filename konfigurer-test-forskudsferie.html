@@ -1,0 +1,67 @@
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <ol>
+    <li>Tjek først, at feriekontoen har de korrekte avancerede indstillinger. Gå til <b>System → Konti → Konti</b></li>
+    <li>Vælg hovedkontoen for ferie, normalt S0300, og gå til fanen <b>Avanceret</b></li>
+    <li>Rul ned til afsnittet om <b>Minimumsaldo</b>, og se, at den er sat til 0</li>
+    <li>Nederst skal indstillingen <b>Løbende check</b> være vinget af</li>
+    <li>Gå til Webportalen og navigér til webparten Kalender</li>
+    <li>Vælg en medarbejder, og forsøg at registrere 6 ugers ferie. Du bør få en fejl.</li>
+    <br>
+    <li>Derefter skal vi oprette og angive en sats for en medarbejderværdi. Gå til <b>System → Medarbejderværdier</b></li>
+    <li>Klik på det blå plus for at oprette en ny medarbejderværdi med disse indstillinger:</li>
+    <br>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Type</b></td>
+        <td>Almindelig værdi</td>
+      </tr>
+      <tr>
+        <td><b>Id</b></td>
+        <td>FORSKUDSFERIE</td>
+      </tr>
+      <tr>
+        <td><b>Beskrivelse</b></td>
+        <td>Forskudsferie</td>
+      </tr>
+      <tr>
+        <td><b>Definitionsniveau</b></td>
+        <td>Medarbejder, Kategori og System</td>
+      </tr>
+      <tr>
+        <td><b>Tilgængelig for kontoformler</b></td>
+        <td>&#x2713</td>
+      </tr>
+    </table>
+    <br>
+    <li>Gå til <b>System → Medarbejder</b></li>
+    <li>Vælg den medarbejder, du ønsker at tildele forskudsferie</li>
+    <li>Klik på <b>Satser</b></li>
+    <li>Klik på det blå plus for at tilføje en ny sats med disse indstillinger:</li>
+    <br>
+    <table class="holiday-table">
+      <tr>
+        <td><b>Sats-ID</b></td>
+        <td>FORSKUDSFERIE</td>
+      </tr>
+      <tr>
+        <td><b>Sats</b></td>
+        <td>-25</td>
+      </tr>
+      <tr>
+        <td><b>Fra</b></td>
+        <td>01/01/2025</td>
+      </tr>
+      <tr>
+        <td><b>Til</b></td>
+        <td></td>
+      </tr>
+    </table>
+    <br>
+    <li>Gem den, og test igen i webportalen ved at gentage trin 5-6</li>
+  </ol>
+  <p>Bemærk: Fra- og Til-datoerne bør i et realistisk scenarie indstilles således, at undtagelsen kun er gældende, indtil medarbejderen har optjent nok ferie til ikke at have brug dispensation. </p>
+  <p>Eksempel: Medarbejderen har optjent 4,16 feriedage i oktober. De ønsker at registrere 1 uges ferie, hvilket kræver 5 dage. FORSKUDSFERIE-værdien sættes til -1 fra 1. okt. indtil 1. nov., hvor de optjener yderligere 2,08 dage, der kan dække "lånet".</p>
+</body>
